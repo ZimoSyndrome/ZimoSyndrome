@@ -1,11 +1,18 @@
 <img src="assets/banner.svg" alt="" width="100%">
 
-<br>
+```python
+def optimize_life(bugs: int, learning_rate: float = 0.01) -> str:
+    caffeine_level = 100
 
-Hi, I'm Zimo.
+    while bugs > 0:
+        # Wandering through the loss landscape of life
+        bugs -= 1
+        caffeine_level -= 10
 
-I like code, math, and machine learning. Most of the things I build are where the three meet: models of markets, and systems that can show their evidence.
+        if caffeine_level <= 0:
+            return "Exploding Gradient Error: Go to sleep."
 
-Away from the keyboard, I play ultimate frisbee and I travel. I keep a [map](https://chenzimo.vercel.app/travel) of the places I have been.
+    return "Global Optimum Reached: Code compiles!"
+```
 
-More about me is at [chenzimo.vercel.app](https://chenzimo.vercel.app).
+When I'm not debugging: ultimate frisbee, and [a map of everywhere I've been](https://chenzimo.vercel.app/travel).
